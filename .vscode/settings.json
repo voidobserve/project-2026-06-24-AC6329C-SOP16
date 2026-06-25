@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "ws2812fx.h": "c",
+        "led_strand_effect.h": "c"
+    }
+}
