@@ -392,8 +392,8 @@ int key_driver_init(void)
     extern struct key_driver_para rf24g_scan_para;
     extern struct RF24G_PARA is_rf24g_;
     sys_s_hi_timer_add((void *)&rf24g_scan_para, key_driver_scan, rf24g_scan_para.scan_time); //注册按键扫描定时器
-    sys_s_hi_timer_add(NULL, RF24G_Key_Handle, is_rf24g_._sacn_t); //注册按键扫描定时器
-    sys_s_hi_timer_add(NULL, RF24G_Key_Long_Scan, is_rf24g_._sacn_t); //注册按键扫描定时器
+    // sys_s_hi_timer_add(NULL, RF24G_Key_Handle, is_rf24g_._sacn_t); //注册按键扫描定时器
+    // sys_s_hi_timer_add(NULL, RF24G_Key_Long_Scan, is_rf24g_._sacn_t); //注册按键扫描定时器
 
 #endif 
 

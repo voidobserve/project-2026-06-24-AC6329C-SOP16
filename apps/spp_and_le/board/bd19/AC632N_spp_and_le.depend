@@ -38699,7 +38699,7 @@
 	"asm/ledc.h"
 	"audio_spectrum.h"
 
-1762762534 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\cpu\bd19\mcpwm.c
+1782463258 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\cpu\bd19\mcpwm.c
 	"asm/mcpwm.h"
 	"asm/clock.h"
 	"asm/gpio.h"
@@ -38980,7 +38980,7 @@
 	"asm/irflt.h"
 	"app_config.h"
 
-1762762533 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\common\device\key\key_driver.c
+1782465293 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\common\device\key\key_driver.c
 	"device/key_driver.h"
 	"system/event.h"
 	"system/init.h"
@@ -41072,7 +41072,7 @@
 	"system/debug.h"
 	"smartbox_extra_flash_opt.h"
 
-1782264159 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\hardware\hardware.c
+1782458098 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\hardware\hardware.c
 	"hardware.h"
 	"gpio.h"
 	"led_strand_effect.h"
@@ -41128,7 +41128,7 @@
 	<stdint.h>
 	"ws2812_bsp.h"
 
-1782262672 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\led_strip\led_strip_drive.c
+1782469488 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\led_strip\led_strip_drive.c
 	"led_strip_sys.h"
 	"led_strip_drive.h"
 	"asm/adc_api.h"
@@ -41182,7 +41182,7 @@
 	<stdint.h>
 	"app_config.h"
 
-1782265713 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\save_flash\save_flash.c
+1782455696 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\save_flash\save_flash.c
 	"system/includes.h"
 	"syscfg_id.h"
 	"save_flash.h"
@@ -41200,7 +41200,7 @@
 	"adafruit_typedef.h"
 	"led_strip_sys.h"
 
-1762762533 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\ws2812-fx-lib\ws2812fx_c\ws2812fx2.c
+1782470417 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\ws2812-fx-lib\ws2812fx_c\ws2812fx2.c
 	"WS2812FX.h"
 	"Adafruit_NeoPixel.h"
 	<stdlib.h>
@@ -41223,7 +41223,7 @@
 	<stdlib.h>
 	<string.h>
 
-1782265391 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\spp_and_le\app_main.c
+1782465303 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\spp_and_le\app_main.c
 	"system/includes.h"
 	"app_config.h"
 	"app_action.h"
@@ -42092,7 +42092,7 @@
 	<stdint.h>
 	"app_config.h"
 
-1762762533 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\spp_and_le\examples\multi_conn\app_multi_conn.c
+1782468369 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\spp_and_le\examples\multi_conn\app_multi_conn.c
 	"system/app_core.h"
 	"system/includes.h"
 	"server/server_core.h"
@@ -42665,7 +42665,7 @@
 	"debug.h"
 	"uart_update.h"
 
-1782265829 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\rf24g_key\rf24g_app.c
+1782469453 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\rf24g_key\rf24g_app.c
 	"system/includes.h"
 	"task.h"
 	"event.h"
@@ -42677,10 +42677,12 @@
 	"led_strand_effect.h"
 	"breath_ic_control.h"
 
-1782265314 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\breath_ic_control\breath_ic_control.c
+1782471664 source:d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\breath_ic_control\breath_ic_control.c
 	"breath_ic_control.h"
+	"power_interface.h"
+	"mcpwm.h"
 
-1782265284 d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\breath_ic_control\breath_ic_control.h
+1782471645 d:\project\99-项目\t--天奕\2026-06-24-天奕-可控三头呼吸灯-ac6329c-sop16\code\project-2026-06-24-ac6329c-sop16\apps\user_app\breath_ic_control\breath_ic_control.h
 	"typedef.h"
 	"gpio.h"
 

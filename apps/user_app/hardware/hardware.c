@@ -4,24 +4,24 @@
 
 
 /**************************  风扇IO口初始化   ***********/
-void fan_gpio_init(void)
-{ 
-    gpio_set_pull_down(IO_PORT_DM,0);
-    gpio_set_pull_up(IO_PORT_DM,0);
-    gpio_direction_output(IO_PORT_DM,1);
-}
+// void fan_gpio_init(void)
+// { 
+//     gpio_set_pull_down(IO_PORT_DM,0);
+//     gpio_set_pull_up(IO_PORT_DM,0);
+//     gpio_direction_output(IO_PORT_DM,1);
+// }
 
-void open_fan(void)
-{
-    gpio_direction_output(IO_PORT_DM,1);
+// void open_fan(void)
+// {
+//     gpio_direction_output(IO_PORT_DM,1);
 
-}
+// }
 
-void close_fan(void)
-{
-    gpio_direction_output(IO_PORT_DM,0);
+// void close_fan(void)
+// {
+//     gpio_direction_output(IO_PORT_DM,0);
 
-}
+// }
 
 
 

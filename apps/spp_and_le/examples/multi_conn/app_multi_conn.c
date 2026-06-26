@@ -277,7 +277,8 @@ REGISTER_APPLICATION(app_multi) = {
 //system check go sleep is ok
 static u8 multi_state_idle_query(void)
 {
-    return !is_app_multi_active;
+    // return !is_app_multi_active;
+    return 0;
 }
 
 REGISTER_LP_TARGET(multi_state_lp_target) = {

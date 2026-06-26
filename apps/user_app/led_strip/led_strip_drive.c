@@ -43,7 +43,6 @@ void led_state_init(void)
 /********** 七彩灯输出口 初始化*****************/
 void led_gpio_init(void)
 {
-
     gpio_set_die(_R_PIN, 1);
     gpio_direction_output(_R_PIN, 0);
 
@@ -113,7 +112,6 @@ void led_pwm_init(void)
 
 void mic_gpio_init()
 {
-
     adc_add_sample_ch(MIC_CH); // 注意：初始化AD_KEY之前，先初始化ADC
     gpio_set_die(MIC_PIN, 0);
     gpio_set_direction(MIC_PIN, 1);

@@ -45,8 +45,7 @@ keil MDK 编译器不支持二进制表示，因此首先要实现binary.h文件
 #include <stdlib.h>
 #include <string.h>
 
-#include "led_strip_sys.h"
-
+#include "led_strip_sys.h" 
 
 static uint16_t _rand16seed;
 static void (*customShow)(void) = NULL;
@@ -202,9 +201,11 @@ void WS2812FX_play(void)
   _running = true;
 }
 
+
 void WS2812FX_pause() {
   _running = false;
 }
+
 
 void WS2812FX_resume() {
   WS2812FX_resetSegments();

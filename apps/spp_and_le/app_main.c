@@ -323,13 +323,15 @@ static const u16 timer_div[] = {
 
 ___interrupt
     AT_VOLATILE_RAM_CODE void
-    user_timer_isr(void) // 50us
+    user_timer_isr(void) // 125 us
 {
-
-    TIMER_CON |= BIT(14);
+    TIMER_CON |= BIT(14); // 写1，清除中断标志
+    TIMER_CNT = 0;
 
     extern void one_wire_send(void);
     one_wire_send(); // steomotor
+
+    breath_ic_control_125us_isr();
 }
 
 void user_timer_init(void)
@@ -434,6 +436,10 @@ void main_while(void)
         sound_handle();
         run_tick_per_10ms();
         WS2812FX_service();
+
+        RF24G_Key_Handle();
+        RF24G_Key_Long_Scan();
+
         os_time_dly(1);
     }
 }

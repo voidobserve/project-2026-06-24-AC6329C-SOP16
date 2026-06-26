@@ -41,15 +41,16 @@ void read_flash_device_status_init(void)
 
     // printf("first read fc_effect.base_ins.mode %u\n", (u16)fc_effect.base_ins.mode);
  
+    // USER_TO_DO 
     // 读取完flash之后
-    if (fc_effect.is_breath_ic_breathing_enable)
-    {
-        breath_ic_breathing_enable();
-    }
-    else
-    {
-        breath_ic_breathing_disable();
-    }
+    // if (fc_effect.is_breath_ic_breathing_enable)
+    // {
+    //     breath_ic_breathing_enable();
+    // }
+    // else
+    // {
+    //     breath_ic_breathing_disable();
+    // }
 }
 
 // 把用户数据写到区域3

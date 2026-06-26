@@ -341,21 +341,26 @@ void RF24G_Key_Handle(void)
 
             //  ======================= 流星，电机相关  ===================
 
-            // 电机转速调节 5挡   8s 13s 18s 21s 26s 35s
             if (key_value == RF24_STEMPMOTOR_SPEED)
             {
-                ls_set_motor_speed();
+                // 电机转速调节 5挡   8s 13s 18s 21s 26s 35s
+                // ls_set_motor_speed();
+
+                breath_ic_control.is_send_cmd_enable = 0;
 
                 if (fc_effect.is_breath_ic_breathing_enable)
                 {
                     fc_effect.is_breath_ic_breathing_enable = 0;
-                    breath_ic_breathing_disable();
+                    breath_ic_control.is_breathing_enable = 0;
                 }
                 else
                 {
                     fc_effect.is_breath_ic_breathing_enable = 1;
-                    breath_ic_breathing_enable();
+                    breath_ic_control.is_breathing_enable = 1;
                 }
+
+                breath_ic_control.send_data_byte = breath_ic_control.is_breathing_enable;
+                breath_ic_control.is_send_cmd_enable = 1;
             }
 
             // 单流星  双流星
