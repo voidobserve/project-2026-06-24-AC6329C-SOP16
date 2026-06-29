@@ -19,7 +19,7 @@ const u8 frist_mode[] = {0x3D, 0x00, 0x00, 0x0B, 0x00, 0x01, 0x00, 0x14, 0x00, 0
 *******************************************************************************************************/
 void read_flash_device_status_init(void)
 {
- 
+
     u8 res;
     save_flash_t save_flash3;
 
@@ -31,7 +31,6 @@ void read_flash_device_status_init(void)
 
     if (save_flash3.header != 0x55) // 第一次上电
     {
-
         fc_data_init();
     }
     else
@@ -40,8 +39,8 @@ void read_flash_device_status_init(void)
     }
 
     // printf("first read fc_effect.base_ins.mode %u\n", (u16)fc_effect.base_ins.mode);
- 
-    // USER_TO_DO 
+
+    // USER_TO_DO
     // 读取完flash之后
     // if (fc_effect.is_breath_ic_breathing_enable)
     // {
@@ -51,6 +50,13 @@ void read_flash_device_status_init(void)
     // {
     //     breath_ic_breathing_disable();
     // }
+
+    breath_ic_control.is_breathing_enable = fc_effect.is_breath_ic_breathing_enable;
+    breath_ic_control.send_data_byte = breath_ic_control.is_breathing_enable;
+    breath_ic_control.is_send_cmd_enable = 1;
+
+    // printf("breath_ic_control.is_breathing_enable == %u\n",
+    //        (u16)breath_ic_control.is_breathing_enable);
 }
 
 // 把用户数据写到区域3

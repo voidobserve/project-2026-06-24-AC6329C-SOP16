@@ -2,13 +2,12 @@
 #define __BREATH_IC_CONTROL_H__
 
 #include "typedef.h"
-
 #include "gpio.h"
 
 typedef struct
 {
     u8 is_breathing_enable; // 是否使能呼吸灯控制ic的呼吸效果
-    u8 is_send_cmd_enable;  // 是否要发送控制命令
+    u8 is_send_cmd_enable;  // 是否要发送控制命令（bit0，1：控制灯常亮，0：控制灯呼吸）
     u8 send_data_byte;      // 待发送的数据字节
 } breath_ic_control_t;
 

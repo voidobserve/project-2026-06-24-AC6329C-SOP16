@@ -2476,6 +2476,7 @@ obj/Release/apps/user_app/save_flash/save_flash.o
 -r=obj/Release/apps/user_app/save_flash/save_flash.o,read_user_data_area3,pl
 -r=obj/Release/apps/user_app/save_flash/save_flash.o,frist_mode,pl
 -r=obj/Release/apps/user_app/save_flash/save_flash.o,fc_effect,l
+-r=obj/Release/apps/user_app/save_flash/save_flash.o,breath_ic_control,l
 -r=obj/Release/apps/user_app/save_flash/save_flash.o,zd_countdown,l
 obj/Release/apps/user_app/ws2812-fx-lib/Adafruit_NeoPixel_C/neo_pixel.o
 -r=obj/Release/apps/user_app/ws2812-fx-lib/Adafruit_NeoPixel_C/neo_pixel.o,ws281x_init,pl

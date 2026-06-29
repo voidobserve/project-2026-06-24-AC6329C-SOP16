@@ -76,14 +76,26 @@ void breath_ic_control_125us_isr(void)
     switch (one_wire_send_state)
     {
     case ONE_WIRE_SEND_STATE_IDLE:
-        // 取消复用功能:
-        gpio_disable_fun_output_port(BREATH_IC_CONTROL_PIN);
+        one_wire_send_cnt++;
+        if (one_wire_send_cnt <= 1)
+        {
+            // 取消复用功能:
+            gpio_disable_fun_output_port(BREATH_IC_CONTROL_PIN);
 
-        gpio_set_direction(BREATH_IC_CONTROL_PIN, 0);    // 输出模式
-        gpio_direction_output(BREATH_IC_CONTROL_PIN, 1); // 输出高电平（空闲电平）
+            gpio_set_direction(BREATH_IC_CONTROL_PIN, 0);    // 输出模式
+            gpio_direction_output(BREATH_IC_CONTROL_PIN, 1); // 输出高电平（空闲电平）
+        }
+        else if (one_wire_send_cnt < ((u16)10000 / 125))
+        {
+            // 先输出一段时间的空闲电平，再准备起始信号
+            gpio_direction_output(BREATH_IC_CONTROL_PIN, 1); // 输出高电平（空闲电平）
+        }
+        else
+        {
+            one_wire_send_state = ONE_WIRE_SEND_STATE_SEND_START_SIG;
+            one_wire_send_cnt = 0;
+        }
 
-        one_wire_send_state = ONE_WIRE_SEND_STATE_SEND_START_SIG;
-        one_wire_send_cnt = 0;
         // printf("sig start\n");
         break;
 
@@ -123,7 +135,6 @@ void breath_ic_control_125us_isr(void)
         }
         else
         {
-            // USER_TO_DO 不是LSB发送，需要修改：
             // if (breath_ic_control.send_data_byte & ((u8)1 << (7 - one_wire_send_step)))
             if ((breath_ic_control.send_data_byte >> one_wire_send_step) & ((u8)0x01))
             {
